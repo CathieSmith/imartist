@@ -179,6 +179,7 @@ function checkClick() {
 
     xmlHTTP1.onload = function() {
         let response = xmlHTTP1.response;
+        console.log(response);
         let svgId = response.split(" ")[1].split(`"`)[1];
         
         if (svgId == answer1) {
