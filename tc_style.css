@@ -1,0 +1,52 @@
+.button {
+  border: none;
+  border-radius: 20px;
+  background-color: #EEC0A6;
+  color:#4A3F07;
+  font-size: 15pt;
+  margin: 2px auto;
+  cursor: pointer;
+}
+
+.button:hover:not(.no-hover) {
+  border: none;
+  border-radius: 20px;
+  background-color: #EB945F;
+  color:rgb(255, 255, 255);
+  font-size: 15pt;
+  margin: 2px auto;
+  cursor: pointer;
+}
+
+.button-wrong {
+  background: #C3614A;
+  color:rgb(255, 255, 255);
+}
+ 
+.button-correct {
+  background: #A4CFBC;
+}
+
+.buttons {
+  width: 100%;
+  height: 70%;
+}
+
+#gamespace {
+  display: flex;           
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  
+  height: 550px;
+  width: 550px;
+  background-color: rgb(255, 255, 255);
+
+  text-align: center;
+  margin: auto;
+}
+
+#buttons {
+  margin-top: 50px;
+  text-align: center;
+}

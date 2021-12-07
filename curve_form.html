@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>imArtist: построение формы</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="cf_style.css">
+  </head>
+
+  <body id="body">
+    <header class="page-header flex flex-center">
+        <ul class="line">
+            <li class="line-elem"><a href="bezier.html">кривые Безье</a></li>
+            <li class="line-elem"><a href="main.html">главная</a></li>
+        </ul>
+    </header>
+
+    <main id="main" class="main-page flex flex-center">
+        <div id="gamespace">
+
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="560" height="560">
+
+            <pattern id="Pat01" width="10" height="10" patternUnits="userSpaceOnUse">
+              <rect width="10" height="10" fill="#FFFFFF" stroke="#4A3F07" stroke-width="0.1"/>
+            </pattern>
+
+            <rect x="20" y="20" width="520" height="520" fill="url(#Pat01)"/>    
+            <path d="M20,20 H540 V540 H20 Z" fill="none" stroke="none" stroke-width="0.5" stroke-dasharray="2 2"/>
+            
+            <path fill="none" id="control-path" stroke="#EB9460" d="M20,540 L290,540 290,20 540,20" stroke-dasharray="270 520 9999 9999"/>
+            <path stroke="#A3402C" fill="none" id="bezier-path" stroke-width="1.2" d="M20,540 C280,540 280,20 540,20"/>
+          
+            <!-- опорные точки -->
+            <svg x="0" y="520">
+              <circle r="4" fill="white" stroke="#EB9460" stroke-width="1" cx="20" cy="20"/>
+              <text x="12" y="12">1</text>
+            </svg> 
+            <svg x="270" y="520">
+              <circle r="4" fill="white" stroke="#EB9460" stroke-width="1" cx="20" cy="20"/>
+              <text x="12" y="12">2</text>
+            </svg>
+            <svg x="270" y="0">
+              <circle r="4" fill="white" stroke="#EB9460" stroke-width="1" cx="20" cy="20"/>
+              <text x="12" y="12">3</text>
+            </svg>
+            <svg x="520" y="0">
+              <circle r="4" fill="white" stroke="#EB9460" stroke-width="1" cx="20" cy="20"/>
+              <text x="12" y="12">4</text>
+            </svg>
+          </svg>
+        </div>
+    </main>
+
+    <footer class="page-footer flex flex-center">
+      <ul class="line">
+        <li class="line-elem">автор: Лунева Екатерина</li>
+      </ul>
+    </footer>
+
+    <script src="cf_script.js"></script>
+  </body>
+</html>

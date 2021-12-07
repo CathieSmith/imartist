@@ -1,0 +1,126 @@
+.card {
+    display: flex;           
+    flex-direction: column;  
+    justify-content: space-evenly;  
+    height: 275px;
+    width: 275px;
+}
+
+#answers {
+    display: flex;           
+    flex-direction: column;  
+    justify-content: space-evenly;
+    column-gap: 0px;
+    height: 550px;
+    width: 204px;
+    align-items: center;  
+    background-color: #E0E7E1;
+}
+
+.container {
+    display: flex;           
+    flex-direction: row;  
+    justify-content: center; 
+    height: 550px;
+    width: 275px;
+}
+
+#gamespace {
+    display: flex;           
+    flex-direction: row;  
+    justify-content: space-between; 
+    align-items: center;     
+    
+    height: 550px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+  
+    text-align: center;
+    margin: auto;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    border: #E0E7E1 2px solid;
+    /* background-color: #A3402C; */
+}
+
+.title {
+    height: 30px;
+    width: 200px;
+    background-color:  #E0E7E1;
+    /* background-color:  #60c66f; */
+    border: #e0e7e100 2px solid;
+    /* border-bottom: #A3402C 2px solid; */
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+  }
+  
+  .modal-right {
+    opacity: 0;
+    visibility: hidden;
+    
+    width: 100%;
+    max-width: 500px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 6px 0 4px -4px rgba(163, 64, 44, .5) , -6px 0 4px -4px rgba(163, 64, 44, .5); 
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+  }
+  
+  .modal-right.active,
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-next,
+  .modal-close {
+    border: none;
+    border-radius: 20px;
+    background-color: #EEC0A6;
+    color:#4A3F07;
+  
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 15px;
+    position: relative;
+  
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .modal-next:hover,
+  .modal-close:hover {
+    border: none;
+    border-radius: 20px;
+    background-color: #EB945F;
+    color:rgb(255, 255, 255);
+    
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 15px;
+    position: relative;
+  
+    text-align: center;
+    cursor: pointer;
+  }

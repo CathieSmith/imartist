@@ -1,0 +1,16 @@
+#pair-title {
+    margin: 0px auto;
+    text-align: start;
+    width: 95%;
+}
+
+#pair-text {
+    margin-top: -20px;
+    /* margin-top: 0 auto; */
+    text-align: start;
+    width: 95%;
+}
+
+#buttons {
+    margin: auto auto 0px auto;
+}
